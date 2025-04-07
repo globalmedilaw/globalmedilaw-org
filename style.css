@@ -1,4 +1,3 @@
-/* Reset some defaults */
 * {
   margin: 0;
   padding: 0;
@@ -6,9 +5,21 @@
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #000;
-  background-color: #fff;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url('sky.png');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 20px;
 }
 
 /* Navbar */
@@ -16,88 +27,79 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
-  background-color: white;
-  border-bottom: 2px solid #007BFF;
+  padding: 0 40px;
 }
 
-.nav-left {
+.logo-container {
   display: flex;
   align-items: center;
 }
 
 .logo {
-  height: 50px;
-  margin-right: 1rem;
+  width: 80px;
+  height: auto;
+  margin-right: 15px;
 }
 
-.title {
+.org-name {
   font-size: 1.5rem;
-  color: #007BFF;
+  font-weight: bold;
+  color: white;
 }
 
-.nav-right ul {
+.menu {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
+  gap: 30px;
 }
 
-.nav-right a {
-  text-decoration: none;
-  color: #007BFF;
-  font-weight: 600;
-}
-
-.hero {
-  background-image: url('sky.png');
-  background-size: cover;
-  background-position: center;
-  height: 400px; /* or whatever height you want */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.menu li a {
   color: white;
-  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
 }
 
-.hero-overlay {
+/* Hero Text */
+.hero-text {
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.7);
-  padding: 2rem;
-  border-radius: 10px;
+  padding-bottom: 100px;
 }
 
-.tagline {
+.hero-text h1 {
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 5px #000;
+}
+
+/* Middle Section */
+.middle-section {
+  padding: 3rem 1rem;
+  text-align: center;
+  background-color: #f2f2f2;
+}
+
+.middle-section h2 {
   font-size: 2rem;
   color: #007BFF;
   margin-bottom: 1rem;
 }
 
-.button {
-  padding: 0.6rem 1.2rem;
-  background-color: #007BFF;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  text-decoration: none;
-}
-
-/* Features Section */
-.features {
-  display: flex;
-  justify-content: space-around;
+/* Mission Section */
+.mission {
+  padding: 3rem 1rem;
   text-align: center;
-  padding: 2rem;
-  background-color: #f5faff;
+  background-color: #fff;
 }
 
-.feature-card {
-  width: 30%;
-}
-
-.feature-card h3 {
+.mission h2 {
+  font-size: 2rem;
   color: #007BFF;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.mission p {
+  max-width: 800px;
+  margin: auto;
 }
 
 /* Footer */
@@ -106,10 +108,27 @@ body {
   color: white;
   text-align: center;
   padding: 1rem;
+  font-size: 0.9rem;
 }
 
-.footer a {
-  color: white;
-  text-decoration: underline;
-  margin: 0 0.5rem;
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .org-name {
+    font-size: 1.2rem;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .hero-text h1 {
+    font-size: 1.8rem;
+  }
 }
