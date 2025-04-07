@@ -13,8 +13,9 @@ body {
 .hero {
   background-image: url('sky.png');
   background-size: cover;
-  background-position: center;
-  height: 70vh;
+  background-position:top center;
+  background-repeat: no-repeat;
+  height: 40vh;
   color: white;
   display: flex;
   flex-direction: column;
