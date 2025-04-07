@@ -78,12 +78,6 @@ body {
   text-align: center;
 }
 
-.middle-section h2 {
-  font-size: 2rem;
-  color: #007BFF;
-  margin-bottom: 2rem;
-}
-
 .cards {
   display: flex;
   justify-content: center;
