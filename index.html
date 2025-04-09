@@ -15,6 +15,7 @@
   <img src="logo.png" alt="Global MEDILAW Logo" class="logo" />
         <span class="org-name">Global MEDILAW Organisation</span>
 </div>
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
 
       <ul class="menu">
         <li><a href="#">Home</a></li>
@@ -60,6 +61,13 @@
     <a href="#">Privacy Policy</a>
   </div>
 </footer>
+
+  <script>
+  const toggleMenu = () => {
+    document.querySelector('.menu').classList.toggle('active');
+  }
+</script>
+
 
 
 
