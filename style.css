@@ -132,6 +132,42 @@ body {
     gap: 10px;
     padding: 10px;
   }
+  /* === Mobile Hamburger Menu Toggle === */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+  }
+
+  .menu {
+    display: none;
+    background-color: #007BFF;
+    border-radius: 10px;
+    padding: 10px 0;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    z-index: 999;
+    width: 150px;
+  }
+
+  .menu.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
   .logo-container {
     flex-direction: column;
     align-items: center;
