@@ -7,6 +7,16 @@
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
+  <section id="contact-section" style="display: none; text-align: center; padding: 20px;">
+  <h2>Contact Us</h2>
+  <p>Email: <a href="mailto:globalmedilaw@gmail.com">globalmedilaw@gmail.com</a></p>
+  <p>Phone: <a href="tel:+919440801289">9440801289</a></p>
+  <p>
+    Follow us:<br>
+    <a href="https://x.com/globalmedilaw" target="_blank">X (Twitter)</a> |
+    <a href="https://www.instagram.com/globalmedilaw" target="_blank">Instagram</a>
+  </p>
+</section>
 
   <!-- Header Section -->
   <header class="hero">
@@ -21,7 +31,6 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="service.html">Service</a></li>
-        <a href=" contact.html">Contact</a>
       </ul>
     </nav>
     
@@ -70,8 +79,28 @@
   }
 </script>
 
+  
+  <footer style="background-color: #f1f1f1; padding: 20px; text-align: center;">
+  <p><strong>Contact Us</strong></p>
+  <p>Email: <a href="mailto:globalmedilaw@gmail.com">globalmedilaw@gmail.com</a></p>
+  <p>Phone: <a href="tel:+919440801289">9440801289</a></p>
+  <p>
+    Follow us:<br>
+    <a href="https://x.com/globalmedilaw" target="_blank">X (Twitter)</a> |
+    <a href="https://www.instagram.com/globalmedilaw" target="_blank">Instagram</a>
+  </p>
+  <a href="#" onclick="showContact()">Show Contact</a>
+</footer>
+</footer>
 
-
+<script>
+  function showContact() {
+    document.getElementById('contact-section').style.display = 'block';
+    window.scrollTo(0, document.getElementById('contact-section').offsetTop);
+  }
+</script>
 
 </body>
+</body>
+  
 </html>
