@@ -198,3 +198,11 @@ body {
     align-items: center;
   }
 }
+.contact-section a {
+  color: white;
+  text-decoration: none;
+}
+
+.contact-section a:hover {
+  color: #ccc;
+}
