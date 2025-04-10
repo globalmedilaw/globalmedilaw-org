@@ -214,3 +214,20 @@ body {
 .contact-section a:hover {
   color: #ccc;
 }
+.event-slider {
+  text-align: center;
+  padding: 2rem;
+}
+
+.slider {
+  position: relative;
+  max-width: 600px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slide {
+  width: 100%;
+  display: none;
+  border-radius: 10px;
+}
