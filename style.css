@@ -148,6 +148,9 @@ body {
     top: 20px;
     right: 30px;
   }
+  .hero {
+    padding-top: 10px
+  }
 
   .menu {
     display: none;
@@ -176,13 +179,13 @@ body {
   }
   .logo {
     width: 80;
-    margin: 5px;
+    margin: 0;
   }
 
   .org-name {
     font-size: 1.2rem;
     text-align: center;
-    margin-top: 5px;
+    margin-top: 4px;
   }
 
   .menu {
