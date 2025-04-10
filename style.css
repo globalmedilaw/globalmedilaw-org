@@ -231,3 +231,15 @@ body {
   display: none;
   border-radius: 10px;
 }
+.hero {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+.logo-container {
+  margin-top: 0 !important;
+}
+
+.hero > * {
+  margin-top: 0 !important;
+}
