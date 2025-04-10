@@ -15,7 +15,7 @@ body {
   background-size: cover;
   background-position:top center;
   background-repeat: no-repeat;
-  height: 40vh;
+  height: auto;
   color: white;
   display: flex;
   flex-direction: column;
